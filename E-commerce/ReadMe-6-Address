@@ -1,0 +1,95 @@
+// ADDRESS CONTROLLER 
+
+GET METHOD:
+-----------
+http://localhost:9090/addressController/viewAllAddress
+---------------------------------------------------------
+OUTPUT:
+-------
+{
+    {
+        "addressId": "2",
+        "streetNo": "400",
+        "buildingName": "Ajay Complex",
+        "city": "Trichy",
+        "state": "Tamilnadu",
+        "country": "India",
+        "pincode": "666666",
+        "customer": null
+    }
+}
+-----------------------------------------------------------
+POST METHOD:
+------------
+http://localhost:9090/addressController/addAddress
+------------------------------------------------------------
+ 
+ {
+        "addressId": "1",
+        "streetNo": "420",
+        "buildingName": "Raji Apartment",
+        "city": "Trichy",
+        "state": "tamilnadu",
+        "country": "India",
+        "pincode": "666666",
+        "customer": {
+            "customerId": "1",
+            "firstName": "Mahesh",
+            "lastName": "Kumar",
+            "mobileNumber": "9625478091",
+            "email": "Mahesh@gmail.com"
+        }
+    }
+------------------------------------------------------------------
+    
+PUT METHOD:
+-----------
+http://localhost:9090/addressController/updateAddress
+--------------------------------------------------------------------
+   {
+   		"addressId": "1",
+        "streetNo": "400",
+        "buildingName": "Raji Apartment",
+        "city": "Trichy",
+        "state": "tamilnadu",
+        "country": "India",
+        "pincode": "666666",
+        "customer": {
+            "customerId": "1",
+            "firstName": "Mahesh",
+            "lastName": "Kumar",
+            "mobileNumber": "9625478091",
+            "email": "Mahesh@gmail.com"
+
+        }
+    }
+-------------------------------------------------------------------------
+GET METHOD:
+-----------
+http://localhost:9090/addressController/viewAddressBy/1
+---------------------------------------------------------------------------
+OUTPUT:
+-------
+
+{
+    "addressId": "1",
+        "streetNo": "400",
+        "buildingName": "Raji Apartment",
+        "city": "Trichy",
+        "state": "tamilnasu",
+        "country": "India",
+        "pincode": "666666",
+        "customer": {
+            "customerId": "1",
+            "firstName": "Mahesh",
+            "lastName": "Kumar",
+            "mobileNumber": "9625478091",
+            "email": "Mahesh@gmail.com"
+    }
+}
+-----------------------------------------------------------------------------------
+
+DELETE METHOD:
+--------------
+http://localhost:9090/addressController/removeAddress
+--------------------------------------------------------------------------------------

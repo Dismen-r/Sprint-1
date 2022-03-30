@@ -1,0 +1,36 @@
+CART CONTROLLER:
+----------------
+
+
+
+GET METHOD:
+-----------
+http://localhost:9090/cartController/viewAllProducts
+-------------------------------------------------------
+OUTPUT:
+-------
+{
+    "cartId": null,
+    "customer": null,
+    "products": [
+        null
+    ]
+}
+----------------------------------------------------------
+
+
+REMOVE METHOD:
+-----------
+-----------
+http://localhost:9090/cartController/removeAllProducts
+-------------------------------------------------------
+OUTPUT:
+-------
+{
+    "cartId": null,
+    "customer": null,
+    "products": [
+        null
+    ]
+}
+----------------------------------------------------------

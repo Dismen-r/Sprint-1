@@ -1,0 +1,10 @@
+insert in database
+
+insert into user values('1','password','user');
+insert into order_table values ('1',current_date,'ordered');
+insert into address values ('1','Ajay complex','Trichy','India','666666','Tamilnadu','302','1');
+insert into cart values('1');
+insert into customer values('1','Mahesh@gmail.com','Mahesh','Kumar','9625478091','1','1','1','1');
+insert into category values('1','mobile');
+insert into product values('1','red','circle','Apple','30000','iphone8','2','i5','1','1','1');
+commit;

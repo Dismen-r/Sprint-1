@@ -1,0 +1,83 @@
+// ORDER MODULE
+
+GET METHOD
+-----------
+http://localhost:9090/orderController/viewAllOrder
+-------------------------------------------------
+OUTPUT
+------
+
+[
+    {
+        "orderId": "1",
+        "orderStatus": "ordered",
+        "orderDate": "2022-03-29",
+        "customer": null,
+        "products": [
+            {
+                "productId": "1",
+                "productName": "iphone8",
+                "price": 30000.0,
+                "color": "red",
+                "dimension": "circle",
+                "specification": "i5",
+                "manufacturer": "Apple",
+                "quantity": 2
+            }
+        ],
+        "address": null
+    }
+]
+
+--------------------------------------------------------------------------------
+
+PUT METHOD
+----------
+http://localhost:9090/orderController/updateOrder
+--------------------------------------------------------------------------------
+
+{
+    "orderId": "2",
+    "orderStatus": "ordered",
+    "orderDate": "2022-03-13",
+    "customer": null,
+    "products": null,
+    "address": null
+}
+----------------------------------------------------------------------------------
+
+POST METHOD
+----------
+http://localhost:9090/orderController/addOrder
+-------------------------------------------------------------------------------------
+
+{
+    "orderId": "23",
+    "orderStatus": "ordered",
+    "orderDate": "2022-03-13",
+    "customer": null,
+    "products": null,
+    "address": null
+}
+
+--------------------------------------------------------------------------------------
+DELETE METHOD
+-------------
+http://localhost:9090/orderController/removeOrder
+-----------------------------------------------------------------------------------
+
+
+{
+    "orderId": "23",
+    "orderStatus": "ordered",
+    "orderDate": "2022-03-13",
+    "customer": {
+        "customerId": "2",
+        "firstName": "Balaji",
+        "lastName": "Doss",
+        "mobileNumber": "99999999999",
+        "email": "Balaji@gmail.com"
+    },
+    "products": null,
+    "address": null
+}
